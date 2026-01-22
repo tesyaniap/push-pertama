@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Siswa</h1>
+        
+        <div class="form-group">
+            <input type="text" id="nama" placeholder="Nama Siswa">
+            <input type="text" id="kelas" placeholder="Kelas">
+            <input type="number" id="umur" placeholder="Umur">
+            <button onclick="tambahSiswa()">Tambah Siswa</button>
+            <button onclick="updateSiswa()" id="btnUpdate" style="display:none;">Update Data</button>
+        </div>
+
+        <div class="table-container">
+            <table id="tabelSiswa">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nama</th>
+                        <th>Kelas</th>
+                        <th>Umur</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="crud.js"></script>
+</body>
+</html>

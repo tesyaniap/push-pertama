@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        180deg,
+        #b9e6ff 0%,
+        #eaf7ff 60%,
+        #ffffff 100%
+    );
+}
+
+.container {
+    width: 90%;
+    padding: 32px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.301);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+    font-size: 200%;
+    font-weight: 600;
+}
+
+.form-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input {
+    padding: 15px 20px;
+    border: none;
+    width: 100%;
+    border-radius: 12px;
+    background: #f8f9fa;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    min-width: 200px;
+}
+
+input:focus {
+    outline: none;
+    transform: translateY(-2px);
+    background: #fff;
+}
+
+/* button {
+    position: relative;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    border: 2px solid white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+button:hover::before {
+    transform: scaleX(1);
+} */
+
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: white;
+    stroke: #000000;
+    color: rgb(0, 0, 0);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background-color: #4facfe;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+td {
+    padding: 18px 20px;
+    border-bottom: 1px solid #f1f3f4;
+    font-size: 15px;
+}
+
+tr:hover {
+    background: #f8f9fa;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.btn-edit {
+    background: linear-gradient(135deg, #4facfe, #0d76ff);
+    color: white;
+    flex: 1;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
+    min-width: 60px;
+}
+
+.btn-edit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(79, 172, 254, 0.5);
+}
+
+.btn-delete {
+    background: linear-gradient(135deg, #ff5353, #ff0d00);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    flex: 1;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+    min-width: 60px;
+}
+
+.btn-delete:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.5);
+}
+
+#btnUpdate {
+    background-color: #4facfe;
+    box-shadow: 0 4px 15px rgba(0, 46, 99, 0.4);
+}
+
+#btnUpdate:hover {
+    box-shadow: 0 8px 25px rgba(67, 153, 233, 0.6);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .form-group {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    input, button {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    table {
+        font-size: 12px;
+        min-width: 600px;
+    }
+    
+    th, td {
+        padding: 8px 4px;
+        white-space: nowrap;
+    }
+    
+    .btn-edit, .btn-delete {
+        padding: 6px 8px;
+        font-size: 11px;
+        flex: 1;
+        min-width: 45px;
+        max-width: 60px;
+    }
+    
+    .action-buttons {
+        gap: 4px;
+    }
+}
