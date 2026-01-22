@@ -95,9 +95,8 @@ button {
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
     transition: all 0.3s ease;
-    background-color: white;
-    stroke: #000000;
-    color: rgb(0, 0, 0);
+    background-color: rgb(23, 189, 255);
+    color: rgb(255, 255, 255);
 }
 
 button:hover {
